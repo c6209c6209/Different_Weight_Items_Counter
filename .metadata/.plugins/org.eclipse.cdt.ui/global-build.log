@@ -1,0 +1,257 @@
+
+**** Build of configuration Debug for project final_project_msp ****
+
+"E:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccs1011/ccs/ccs_base/msp430/include" --include_path="D:/ÂµåÂÖ•ÂºèÁ≥ªÁµ±Ê?ÇË??/final project/final_project_msp" --include_path="E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "final_project_msp.out"
+Invoking: MSP430 Linker
+"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"final_project_msp.map" --heap_size=80 --stack_size=80 -i"E:/ti/ccs1011/ccs/ccs_base/msp430/include" -i"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/lib" -i"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="final_project_msp_linkInfo.xml" --use_hw_mpy=none --rom_model -o "final_project_msp.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "final_project_msp.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project final_project_msp ****
+
+"E:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccs1011/ccs/ccs_base/msp430/include" --include_path="D:/ÂµåÂÖ•ÂºèÁ≥ªÁµ±Ê?ÇË??/final project/final_project_msp" --include_path="E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 77: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "unsigned char"
+"../main.c", line 80: warning #43-D: operand types are incompatible ("unsigned char *" and "int")
+"../main.c", line 80: warning #154-D: conversion of nonzero integer to pointer
+"../main.c", line 86: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+"../main.c", line 91: warning #515-D: a value of type "unsigned char *" cannot be assigned to an entity of type "unsigned char"
+"../main.c", line 95: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+"../main.c", line 96: warning #225-D: function "memset" declared implicitly
+"../main.c", line 81: remark #2553-D: (ULP 14.1) Array index (involving "str_cnt") of type "int". Recommend using "unsigned int"
+"../main.c", line 91: remark #2553-D: (ULP 14.1) Array index (involving "str_cnt") of type "int". Recommend using "unsigned int"
+"../main.c", line 104: error #171: expected a declaration
+"../main.c", line 127: error #609: this pragma must immediately precede a declaration
+"../main.c", line 144: error #609: this pragma must immediately precede a declaration
+"../main.c", line 170: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 171: warning #78-D: this declaration has no storage class or type specifier
+"../main.c", line 171: error #148: declaration is incompatible with "volatile unsigned int TA0CCTL1" (declared at line 505 of "E:\ti\ccs1011\ccs\ccs_base\msp430\include\msp430g2553.h")
+"../main.c", line 171: error #66: expected a ";"
+"../main.c", line 174: error #171: expected a declaration
+"../main.c", line 177: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+7 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project try ****
+
+"E:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccs1011/ccs/ccs_base/msp430/include" --include_path="D:/ÂµåÂÖ•ÂºèÁ≥ªÁµ±Ê?ÇË??/final project/try" --include_path="E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 103: warning #225-D: function "memset" declared implicitly
+"../main.c", line 103: warning #225-D: function "strlen" declared implicitly
+"../main.c", line 71: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 72: remark #2553-D: (ULP 14.1) Array index (involving "k") of type "int". Recommend using "unsigned int"
+"../main.c", line 74: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 75: remark #2553-D: (ULP 14.1) Array index (involving "k") of type "int". Recommend using "unsigned int"
+"../main.c", line 100: remark #1532-D: (ULP 5.3) Detected sprintf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 108: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 123: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 124: remark #2553-D: (ULP 14.1) Array index (involving "a") of type "int". Recommend using "unsigned int"
+"../main.c", line 108: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 123: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 124: remark #2553-D: (ULP 14.1) Array index (involving "a") of type "int". Recommend using "unsigned int"
+"../main.c", line 108: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 123: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 124: remark #2553-D: (ULP 14.1) Array index (involving "a") of type "int". Recommend using "unsigned int"
+"../main.c", line 108: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 110: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 123: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 124: remark #2553-D: (ULP 14.1) Array index (involving "a") of type "int". Recommend using "unsigned int"
+"../main.c", line 123: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 124: remark #2553-D: (ULP 14.1) Array index (involving "a") of type "int". Recommend using "unsigned int"
+"../main.c", line 136: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 137: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 147: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../main.c", line 148: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../main.c", line 192: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 211: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 94 (col. 32): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 95 (col. 34): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 162 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 169 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../main.c"
+ 
+Building target: "try.out"
+Invoking: MSP430 Linker
+"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"try.map" --heap_size=80 --stack_size=80 -i"E:/ti/ccs1011/ccs/ccs_base/msp430/include" -i"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/lib" -i"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="try_linkInfo.xml" --use_hw_mpy=none --rom_model -o "try.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "try.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project try ****
+
+"E:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'try.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project try ****
+
+"E:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'try.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project try ****
+
+"E:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'try.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project final_project_msp ****
+
+"E:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccs1011/ccs/ccs_base/msp430/include" --include_path="D:/ÂµåÂÖ•ÂºèÁ≥ªÁµ±Ê?ÇË??/final project/final_project_msp" --include_path="E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 77: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "unsigned char"
+"../main.c", line 80: warning #43-D: operand types are incompatible ("unsigned char *" and "int")
+"../main.c", line 80: warning #154-D: conversion of nonzero integer to pointer
+"../main.c", line 86: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+"../main.c", line 91: warning #515-D: a value of type "unsigned char *" cannot be assigned to an entity of type "unsigned char"
+"../main.c", line 95: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+"../main.c", line 96: warning #225-D: function "memset" declared implicitly
+"../main.c", line 81: remark #2553-D: (ULP 14.1) Array index (involving "str_cnt") of type "int". Recommend using "unsigned int"
+"../main.c", line 91: remark #2553-D: (ULP 14.1) Array index (involving "str_cnt") of type "int". Recommend using "unsigned int"
+"../main.c", line 104: error #171: expected a declaration
+"../main.c", line 127: error #609: this pragma must immediately precede a declaration
+"../main.c", line 144: error #609: this pragma must immediately precede a declaration
+"../main.c", line 170: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 171: warning #78-D: this declaration has no storage class or type specifier
+"../main.c", line 171: error #148: declaration is incompatible with "volatile unsigned int TA0CCTL1" (declared at line 505 of "E:\ti\ccs1011\ccs\ccs_base\msp430\include\msp430g2553.h")
+"../main.c", line 171: error #66: expected a ";"
+"../main.c", line 174: error #171: expected a declaration
+"../main.c", line 177: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+7 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project final_project_msp ****
+
+"E:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccs1011/ccs/ccs_base/msp430/include" --include_path="D:/ÂµåÂÖ•ÂºèÁ≥ªÁµ±Ê?ÇË??/final project/final_project_msp" --include_path="E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 77: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "unsigned char"
+"../main.c", line 80: warning #43-D: operand types are incompatible ("unsigned char *" and "int")
+"../main.c", line 80: warning #154-D: conversion of nonzero integer to pointer
+"../main.c", line 86: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+"../main.c", line 91: warning #515-D: a value of type "unsigned char *" cannot be assigned to an entity of type "unsigned char"
+"../main.c", line 95: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+"../main.c", line 96: warning #225-D: function "memset" declared implicitly
+"../main.c", line 81: remark #2553-D: (ULP 14.1) Array index (involving "str_cnt") of type "int". Recommend using "unsigned int"
+"../main.c", line 91: remark #2553-D: (ULP 14.1) Array index (involving "str_cnt") of type "int". Recommend using "unsigned int"
+"../main.c", line 104: error #171: expected a declaration
+"../main.c", line 127: error #609: this pragma must immediately precede a declaration
+"../main.c", line 144: error #609: this pragma must immediately precede a declaration
+"../main.c", line 170: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 171: warning #78-D: this declaration has no storage class or type specifier
+"../main.c", line 171: error #148: declaration is incompatible with "volatile unsigned int TA0CCTL1" (declared at line 505 of "E:\ti\ccs1011\ccs\ccs_base\msp430\include\msp430g2553.h")
+"../main.c", line 171: error #66: expected a ";"
+"../main.c", line 174: error #171: expected a declaration
+"../main.c", line 177: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+7 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project final_project_msp ****
+
+"E:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccs1011/ccs/ccs_base/msp430/include" --include_path="D:/ÂµåÂÖ•ÂºèÁ≥ªÁµ±Ê?ÇË??/final project/final_project_msp" --include_path="E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 77: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "unsigned char"
+"../main.c", line 80: warning #43-D: operand types are incompatible ("unsigned char *" and "int")
+"../main.c", line 80: warning #154-D: conversion of nonzero integer to pointer
+"../main.c", line 86: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+"../main.c", line 91: warning #515-D: a value of type "unsigned char *" cannot be assigned to an entity of type "unsigned char"
+"../main.c", line 95: warning #169-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+"../main.c", line 96: warning #225-D: function "memset" declared implicitly
+"../main.c", line 81: remark #2553-D: (ULP 14.1) Array index (involving "str_cnt") of type "int". Recommend using "unsigned int"
+"../main.c", line 91: remark #2553-D: (ULP 14.1) Array index (involving "str_cnt") of type "int". Recommend using "unsigned int"
+"../main.c", line 117: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "final_project_msp.out"
+Invoking: MSP430 Linker
+"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"final_project_msp.map" --heap_size=80 --stack_size=80 -i"E:/ti/ccs1011/ccs/ccs_base/msp430/include" -i"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/lib" -i"E:/ti/ccs1011/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="final_project_msp_linkInfo.xml" --use_hw_mpy=none --rom_model -o "final_project_msp.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "final_project_msp.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project final_project_msp ****
+
+"E:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'final_project_msp.out' is up to date.
+
+**** Build Finished ****
